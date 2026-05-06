@@ -1,0 +1,385 @@
+.app-shell {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 0 16px 24px;
+}
+
+.cabecalho {
+  background: #efefef;
+  border: 1px solid #8a8a8a;
+  border-radius: 2px;
+  color: #1c1c1c;
+  padding: 10px 14px;
+}
+
+.cabecalho h1 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.cabecalho p {
+  margin: 4px 0 0;
+  font-size: 0.9rem;
+}
+
+.menu-navegacao {
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.area-logotipo {
+  min-width: 100px;
+  min-height: 48px;
+  padding: 8px 10px;
+  border: 1px solid #7a7a7a;
+  border-radius: 6px;
+  background: #fafafa;
+  color: #1f2937;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  transition: background 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.area-logotipo:hover,
+.area-logotipo:focus-visible {
+  background: #f1f1f1;
+  border-color: #5e5e5e;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+  outline: none;
+}
+
+.imagem-logo {
+  width: 100%;
+  max-width: 120px;
+  max-height: 44px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.menu-lateral {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-acoes {
+  display: flex;
+  gap: 10px;
+}
+
+.input-logo {
+  display: none;
+}
+
+.erro-logo {
+  margin: 0;
+  padding: 8px 10px;
+}
+
+.menu-item {
+  border: 1px solid #787878;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(#f4f4f4, #d9d9d9);
+  color: #1f1f1f;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.menu-item:hover {
+  background: linear-gradient(#fbfbfb, #dfdfdf);
+}
+
+main {
+  margin-top: 16px;
+}
+
+.card {
+  background: #f2f2f2;
+  border: 1px solid #8b8b8b;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 14px;
+}
+
+.grid-listagem {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 16px;
+}
+
+.grid-listagem.expandida {
+  grid-template-columns: 1fr;
+}
+
+.coluna-listagem h2,
+.pagina-cadastro h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.barra-busca {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.barra-busca-controles {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+}
+
+.barra-busca label {
+  font-weight: 600;
+}
+
+.barra-busca input,
+.campo-formulario input,
+.campo-formulario textarea,
+.campo-formulario select {
+  width: 100%;
+  border: 1px solid #8a8a8a;
+  border-radius: 6px;
+  padding: 10px;
+  font: inherit;
+  background: #fff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.barra-busca input:focus,
+.campo-formulario input:focus,
+.campo-formulario textarea:focus,
+.campo-formulario select:focus {
+  border-color: #4d7fca;
+  box-shadow: 0 0 0 3px rgba(77, 127, 202, 0.18);
+  outline: none;
+}
+
+.lista-pontos {
+  display: grid;
+  gap: 10px;
+}
+
+.cartao-ponto {
+  border: 1px solid #8a8a8a;
+  background: #f5f5f5;
+  border-radius: 8px;
+  text-align: left;
+  padding: 12px;
+}
+
+.cartao-ponto h3 {
+  margin: 0;
+  font-size: 1.04rem;
+}
+
+.cartao-ponto p {
+  margin: 8px 0 6px;
+  color: #333;
+}
+
+.cartao-ponto span {
+  font-size: 0.9rem;
+  color: #4f4f4f;
+}
+
+.cartao-ponto.selecionado {
+  border-color: #5a7aac;
+  background: #eef2f8;
+}
+
+.descricao-cartao {
+  font-size: 0.9rem;
+}
+
+.botao-detalhes-lista {
+  border: 1px solid #7f7f7f;
+  border-radius: 6px;
+  padding: 8px 10px;
+  background: linear-gradient(#f4f4f4, #d8d8d8);
+  color: #1f1f1f;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  margin-left: auto;
+  display: block;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.detalhe-ponto h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.detalhe-ponto p {
+  margin: 8px 0;
+}
+
+.detalhe-ponto.vazio {
+  color: #44515f;
+}
+
+.paginacao {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.paginacao button,
+.botao-primario,
+.botao-secundario,
+.botao-busca {
+  border: 1px solid #7f7f7f;
+  border-radius: 6px;
+  padding: 10px 14px;
+  background: linear-gradient(#f4f4f4, #d8d8d8);
+  color: #1f1f1f;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.botao-secundario {
+  background: #dcdcdc;
+}
+
+.acoes-cadastro {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.botao-primario:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.paginacao button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.formulario-cadastro {
+  display: grid;
+  gap: 12px;
+}
+
+.campo-formulario {
+  display: grid;
+  gap: 6px;
+}
+
+.campo-formulario label {
+  font-weight: 600;
+}
+
+.campo-formulario small {
+  justify-self: end;
+  color: #5f6f80;
+  font-size: 0.82rem;
+}
+
+.linha-dupla {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 12px;
+}
+
+.campo-carregando {
+  margin: 0;
+  padding: 10px;
+  background: #f8f8f8;
+  border-radius: 6px;
+  border: 1px solid #8a8a8a;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.campo-erro {
+  color: #b91c1c;
+}
+
+.detalhe-ponto {
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.detalhe-ponto.destacado {
+  border-color: #5b5b5b;
+  box-shadow: none;
+}
+
+.estado-vazio {
+  margin: 0;
+  padding: 12px;
+  border-radius: 8px;
+  background: #f2f2f2;
+  border: 1px solid #9a9a9a;
+}
+
+.mensagem-erro,
+.mensagem-info {
+  margin: 0;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.mensagem-erro {
+  background: #f3e2e2;
+  border: 1px solid #ab8181;
+  color: #7d1f1f;
+}
+
+.mensagem-info {
+  background: #efefef;
+  border: 1px solid #8a8a8a;
+  color: #222;
+}
+
+@media (max-width: 900px) {
+  .app-shell {
+    margin-top: 18px;
+  }
+
+  .grid-listagem {
+    grid-template-columns: 1fr;
+  }
+
+  .linha-dupla {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-navegacao {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .area-logotipo {
+    width: 100%;
+  }
+
+  .menu-lateral {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .menu-acoes {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .barra-busca-controles {
+    grid-template-columns: 1fr;
+  }
+}
